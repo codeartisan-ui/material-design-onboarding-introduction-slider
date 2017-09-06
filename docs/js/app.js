@@ -1,23 +1,23 @@
 $(function () {
     $('.owl-carousel').owlCarousel({
         margin: 0,
-        loop:false,
+        loop: false,
         nav: true,
         items: 1,
         touchDrag: true,
         mouseDrag: false,
-        pullDrag:false,
-        navText : ["<button class='md-button md-button--fab'><i class=\"material-icons\">chevron_left</i></button>","<button class='md-button md-button--fab'><i class=\"material-icons\">chevron_right</i></button>"]
+        pullDrag: false,
+        navText: ["<button class='md-button md-button--fab'><i class=\"material-icons\">chevron_left</i></button>", "<button class='md-button md-button--fab'><i class=\"material-icons\">chevron_right</i></button>"]
     });
     changeColor();
     let owl = $('.owl-carousel');
     owl.owlCarousel();
-    owl.on('changed.owl.carousel', function(event) {
+    owl.on('changed.owl.carousel', function (event) {
         setTimeout(function () {
             changeColor();
-        },1);
-        if($('.owl-next').hasClass('disabled')){
-            $('.md-introduction__nav').css('display','none');
+        }, 1);
+        if ($('.owl-next').hasClass('disabled')) {
+            $('.md-introduction__nav').css('display', 'none');
         }
     });
     $('#nav-prev').click(function () {
@@ -27,7 +27,7 @@ $(function () {
         $('.owl-next').click();
     });
     $('#ok-button').click(function () {
-        $('.md-introduction').css('display','none')
+        $('.md-introduction').css('display', 'none')
     });
 
 
@@ -44,8 +44,9 @@ $(function () {
     //     }
     // });
 });
+
 function changeColor() {
     let color = $('.owl-stage').find('.active > .item').css("background-color");
     let metaThemeColor = $("meta[name=theme-color]");
-    metaThemeColor.attr("content",color);
+    metaThemeColor.attr("content", color);
 }
