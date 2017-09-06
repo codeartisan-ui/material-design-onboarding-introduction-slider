@@ -5,6 +5,7 @@ $(function () {
         items: 1,
         touchDrag: true,
         mouseDrag: false,
+        pullDrag:false,
         navText : ["<button class='md-button md-button--fab'><i class=\"material-icons\">chevron_left</i></button>","<button class='md-button md-button--fab'><i class=\"material-icons\">chevron_right</i></button>"]
     });
     changeColor();
