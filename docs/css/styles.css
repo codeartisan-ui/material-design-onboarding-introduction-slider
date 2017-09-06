@@ -41,7 +41,7 @@
 .owl-dots {
     position: fixed;
     bottom: 0;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     left: 25%;
     right: 25%;
 }
@@ -63,9 +63,10 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    z-index: 29!important;
+    z-index: 29 !important;
 }
-#ok-button{
+
+#ok-button {
     position: fixed;
     bottom: 10px;
     right: 16px;
@@ -114,9 +115,9 @@
     }
 
     .owl-nav {
-        z-index: 29!important;
+        z-index: 29 !important;
         display: flex;
-        margin: 0!important;
+        margin: 0 !important;
         height: 100%;
         top: 0;
         flex-direction: row;
@@ -160,7 +161,8 @@
     .md-introduction__nav {
         visibility: hidden;
     }
-    #ok-button{
+
+    #ok-button {
         bottom: 16px;
     }
 }
