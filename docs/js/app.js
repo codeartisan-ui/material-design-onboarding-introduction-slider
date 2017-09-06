@@ -18,6 +18,11 @@ $(function () {
         }, 1);
         if ($('.owl-next').hasClass('disabled')) {
             $('.md-introduction__nav').css('display', 'none');
+            $('#ok-button').css('display', 'block');
+        }
+        else {
+            $('.md-introduction__nav').css('display', 'flex');
+            $('#ok-button').css('display', 'none');
         }
     });
     $('#nav-prev').click(function () {
@@ -28,6 +33,8 @@ $(function () {
     });
     $('#ok-button').click(function () {
         $('.md-introduction').css('display', 'none')
+        let metaThemeColor = $("meta[name=theme-color]");
+        metaThemeColor.attr("content", "#4caf50");
     });
 
 
