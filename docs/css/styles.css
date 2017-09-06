@@ -23,8 +23,7 @@
 }
 
 .nav-button {
-    margin: 0 16px;
-    margin-bottom: 16px;
+    margin: 0 16px 16px;
     color: #fff;
 }
 
@@ -53,9 +52,6 @@
 .active > span {
     background-color: rgba(255, 255, 255, 1) !important;
 
-}
-h3 {
-    margin-top: 0;
 }
 
 .owl-nav {
@@ -170,7 +166,7 @@ h3 {
         visibility: hidden;
     }
 
-    #ok-button {
-        bottom: 16px;
+    #ok-button{
+        position: absolute;
     }
 }
