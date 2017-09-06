@@ -52,6 +52,10 @@
 
 .active > span {
     background-color: rgba(255, 255, 255, 1) !important;
+
+}
+h3 {
+    margin-top: 0;
 }
 
 .owl-nav {
@@ -65,12 +69,16 @@
     justify-content: space-between;
     z-index: 29 !important;
 }
-
-#ok-button {
+#ok-button{
+    display: none;
     position: fixed;
-    bottom: 10px;
-    right: 16px;
-    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    z-index:30;
+}
+#ok-button > button{
     color: #fff;
 }
 
